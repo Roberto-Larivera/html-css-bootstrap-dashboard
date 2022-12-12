@@ -1,0 +1,11 @@
+/* DEBUG  */
+
+/* .debug */
+
+.debug header{
+    height: 50px;
+    background-color: lightgray;
+}
+.debug #main-navigation{
+    width: 100px;
+}

@@ -1,0 +1,7 @@
+main{
+    height: calc(100vh - 50px);
+}
+#main-navigation{
+    background-color: #051E34;
+    height: 100%;
+}
