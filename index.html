@@ -17,7 +17,9 @@
 
     </head>
     <body class="debug">
-        <header>
+        
+        <header>    
+            <!--NAV BAR-->
             <div class="container-fluid">
                 <div class="row align-items-center align-content-center">
                     <div class="col-auto">
@@ -42,10 +44,13 @@
                     </div>
                 </div>
             </div>
+            <!--FINE NAV BAR-->   
         </header>
+
         <main>
-            <div class="contenitore_principale">
-                <aside id="main-aside" class="py-4">
+            <div class="contenitore_principale overflow-hidden">
+                <!--INIZIO ASIDE-->
+                <aside id="main-aside" class="py-4"> 
                     <div class="d-flex flex-column align-items-center justify-content-between">
                         <ul class="my-link-format ps-0 d-flex flex-column gap-3">
                             <li>
@@ -76,13 +81,18 @@
                             </li>
                         </ul>
                 </aside>
-                <section id="main-principal">
-                    <section id="principal-header">
+                <!--FINE ASIDE-->
+                <section id="main-principal" class="overflow-auto">
+                    <!--INIZIO NAVIGATION DEL MAIN -->
+                    <section id="main-header">
                         <div class="container-fluid">
-                            <div class="row p-3 text-white">
-                                <div class="col-6">
-                                    <div class="row row-cols-1">
-                                        <div class="col d-flex align-items-center">
+                            
+                            
+                            <div class="row p-3 text-white">    <!--PRIMA DIVISIONE IN ROW-->
+                                <div class="col-6"> <!--PRIMA COLONNA A-->
+                                    
+                                    <div class="row row-cols-1"> <!--SECONDA DIVISIONE IN ROW-->
+                                        <div class="col d-flex align-items-center"> 
                                             <h1 class="d-inline-block">
                                                 boolean
                                             </h1>
@@ -104,31 +114,62 @@
                                                 boolean blog app
                                             </span>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col">
+                                    </div>  <!--FINE SECONDA DIVISIONE IN ROW-->
+
+                                </div>  <!--FINE PRIMA COLONNA A-->
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                <div class="col"> <!--INIZIO PRIMA COLONNA B-->
                                     <p>
                                         studenti online negli ultimi 30 minuti
                                     </p>
                                     <span class="fs-4">
                                         125
                                     </span>
-                                </div>
-                                <div class="col text-end">
+                                </div>  <!--FINE PRIMA COLONNA B-->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <div class="col text-end">  <!--INIZIO PRIMA COLONNA C-->
                                     <a href="#" class="text-white text-decoration-none">
                                         nuovo studente
                                         <i class="bi bi-plus-square ms-2 fs-2"></i>
                                     </a>
-                                </div>
-                            </div>
+                                </div>  <!--FINE PRIMA COLONNA C-->
+
+                            </div> <!--FINE PRIMA DIVISIONE IN ROW-->
+
+
                         </div>
                     </section>
-                    <section id="principal-main">
+                    <!--FINE MAIN HEADER-->
+
+
+
+                    
+                    <section id="main-cards">
                         <div class="container-fluid">
-                            <div class="row">
+
+
+                            <div class="row">   <!--DIVISIONE PRINCIPALE DEL MAIN IN DUE COLONNE IN DESKTOP-->
+                                
+                                <!--1 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
                                 <div class="col-8">
+
+
                                     <div class="row row-cols-1">
                                         <div class="col">
+
+
                                             <div class="card">
                                                 <div class="card-header">
                                                  Prossime classi
@@ -183,18 +224,20 @@
                                                 </div>
                                                 <div class="p-3">
                                                     <div class="accordion" id="accordionExample">
+                                                        
                                                         <div class="accordion-item">
                                                           <h2 class="accordion-header" id="headingOne">
-                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                               Accordion Item #1
                                                             </button>
                                                           </h2>
-                                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                             <div class="accordion-body">
                                                               <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                                             </div>
                                                           </div>
                                                         </div>
+                                                        
                                                         <div class="accordion-item">
                                                           <h2 class="accordion-header" id="headingTwo">
                                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -207,6 +250,7 @@
                                                             </div>
                                                           </div>
                                                         </div>
+                                                       
                                                         <div class="accordion-item">
                                                           <h2 class="accordion-header" id="headingThree">
                                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -225,19 +269,100 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--FINE 1 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
+
+
+
+
+
+                                <!--2 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
                                 <div class="col-4">
                                     <div class="row row-cols-1">
                                         <div class="col">
-                                            todo
+                                            <div class="card">
+                                                <div class="card-header">
+                                                 Todo
+                                                </div>
+                                                <div class="p-3">
+                                                <div class="card">
+                                                    <form action="">
+                                                        
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                                            Default checkbox
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                
+                                                                <li class="list-group-item">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                                          Checked checkbox
+                                                                        </label>
+                                                                      </div> 
+                                                                </li>
+
+                                                                <li class="list-group-item">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                                          Checked checkbox
+                                                                        </label>
+                                                                      </div> 
+                                                                </li>
+                                                            </ul>
+                                                    </form>
+                                                </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        
                                         <div class="col">
-                                            grafico
+                                            <div class="card">
+                                                <div class="p-3">
+                                                    <div class="card">
+                                                        <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Card title</h5>
+                                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        </div>
+                                                        
+                                                        <ul class="list-group list-group-flush">
+                                                          <li class="list-group-item">An item</li>
+                                                          <li class="list-group-item">A second item</li>
+                                                          <li class="list-group-item">A third item</li>
+                                                        </ul>
+                                                        
+                                                        <div class="card-body">
+                                                          <a href="#" class="card-link">Card link</a>
+                                                          <a href="#" class="card-link">Another link</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--FINE 2 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
+
+
+
+
                         </div>
                     </section>
+                    <!--FINE MAIN CARDS-->
+
+
+
+
+
+
                 </section>
             </div>
         </main>

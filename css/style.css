@@ -23,7 +23,8 @@ main .contenitore_principale{
     display: inline-block;
     width: calc(100% - 150px);
     height: 100%;
+    
 }
-#principal-header{
+#main-header{
     background-color: #1B72E7;
 }
