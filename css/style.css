@@ -1,7 +1,19 @@
 main{
     height: calc(100vh - 50px);
 }
+main .contenitore_principale{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 #main-navigation{
+    display: inline-block;
     background-color: #051E34;
+    height: 100%;
+    width: 100px;
+}
+#main-principal{
+    display: inline-block;
+    width: calc(100% - 100px);
     height: 100%;
 }

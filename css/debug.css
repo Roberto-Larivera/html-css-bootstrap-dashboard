@@ -6,6 +6,11 @@
     height: 50px;
     background-color: lightgray;
 }
-.debug #main-navigation{
-    width: 100px;
+.debug #principal-main .col-8{
+    background-color: lightcoral;
+    min-height: 50px;
+}
+.debug #principal-main .col-4{
+    background-color: lightpink;
+    min-height: 50px;
 }
