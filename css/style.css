@@ -1,19 +1,29 @@
+header .row{
+    height: 70px;
+}
 main{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
 }
 main .contenitore_principale{
     display: flex;
     height: 100%;
     width: 100%;
 }
-#main-navigation{
+#main-aside{
     display: inline-block;
-    background-color: #051E34;
+    /* background-color: #051E34; */
+    background-color: gray;
     height: 100%;
-    width: 100px;
+    width: 150px;
+}
+#main-aside > div{
+    height: 100%;
 }
 #main-principal{
     display: inline-block;
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
     height: 100%;
+}
+#principal-header{
+    background-color: #1B72E7;
 }
