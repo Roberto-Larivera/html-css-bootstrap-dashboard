@@ -33,14 +33,17 @@
     color: white;
 }
 .circle-code{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightcoral;
-    padding: 1px;
     border-radius: 50%;
-    margin-right: 10px;
+    height: 2.5em;
+    width: 2.5em;
 }
 .circle-code i{
     font-size: 1.5em;
+
 }
 .rettangle-code{
     display: inline-block;
