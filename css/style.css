@@ -29,4 +29,8 @@ main{
     background-color: #1B72E7;
 }
 
+.my_collapse{
+    right: 0;
+    z-index: 10;
+}
 

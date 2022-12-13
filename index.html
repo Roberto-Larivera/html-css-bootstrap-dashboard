@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" href="css/mediaquery.css">
+       
+       
+       
 
 
     </head>
@@ -24,10 +27,12 @@
             <div class="container-fluid">
                 <div class="row align-items-center align-content-center">
                     <div class="col-auto">
-                        <div id="logo">
-                            <img src="img/logo.svg" alt="logo-desktop" class="d-none d-lg-inline-block">
-                            <img src="img/mobile-logo.png" alt="logo-mobile" class="d-lg-none">
-                        </div>
+                        <a href="#">
+                            <div id="logo">
+                                <img src="img/logo.svg" alt="logo-desktop" class="d-none d-lg-inline-block">
+                                <img src="img/mobile-logo.png" alt="logo-mobile" class="d-lg-none">
+                            </div>
+                        </a>
                     </div>
                     <div class="col">
                         <form action="#">
@@ -56,23 +61,50 @@
                                 
 
                             </li>
-                            <li>
-                                <button type="button" class="btn text-secondary fs-5 d-none d-lg-inline">
+                            <li class="position-relative">
+                                <button type="button" class="btn text-secondary fs-5 d-none d-lg-inline" data-bs-toggle="collapse" data-bs-target="#dots-header" aria-expanded="false" aria-controls="dots-header">
                                     <i class="bi bi-three-dots-vertical"></i>
                                 </button>
                                 
-
+                                <div class="collapse position-absolute my_collapse" id="dots-header">
+                                    <div class="card card-body">
+                                        <ul class="my-link-format">
+                                            <li class="my_hover-link">
+                                                <a href="#" class="text-dark">
+                                                    Profilo
+                                                </a>
+                                            </li>
+                                            <li class="my_hover-link">
+                                                <a href="#" class="text-dark">
+                                                    Fatturazione
+                                                </a>
+                                            </li>
+                                            <li class="my_hover-link">
+                                                <a href="#" class="text-dark">
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
-                                <button type="button" class="btn text-warning fs-5 ">
+                            <li class="position-relative">
+                                <button type="button" class="btn text-warning fs-5" data-bs-toggle="collapse" data-bs-target="#notifiche-header" aria-expanded="false" aria-controls="notifiche-header">
                                     <i class="bi bi-bell-fill"></i>
                                 </button>
+
+                                <div class="collapse position-absolute my_collapse" id="notifiche-header">
+                                    <div class="card card-body">
+                                        Le notifiche sono attive!
+                                    </div>
+                                </div>
                                 
 
                             </li>
                         </ul>
                     </div>
                 </div>
+                
             </div>
             <!--FINE NAV BAR-->   
         </header>
@@ -81,7 +113,7 @@
                 <!--INIZIO ASIDE-->
                 <aside id="main-aside" class="d-flex flex-column align-items-center justify-content-between py-4"> 
                         <ul class="my-link-format ps-0 d-flex flex-column gap-3">
-                            <li>
+                            <li class="my_hover-link-ul p-1">
                                 <a href="#" class="text-white">
                                     <i class="bi bi-house-door-fill me-lg-2"></i>
                                     <span class="d-none d-lg-inline">
@@ -89,7 +121,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="my_hover-link-ul p-1">
                                 <a href="#" class="text-white">
                                     <i class="bi bi-graph-up  me-lg-2"></i>
                                     <span class="d-none d-lg-inline">
@@ -97,7 +129,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="my_hover-link-ul p-1">
                                 <a href="#" class="text-white">
                                     <i class="bi bi-bar-chart-fill  me-lg-2"></i>
                                     <span class="d-none d-lg-inline">
@@ -107,7 +139,7 @@
                             </li>
                         </ul>
                         <ul class="my-link-format ps-0">
-                            <li>
+                            <li class="my_hover-link-ul p-1">
                                 <a href="#" class="text-white">
                                     <i class="bi bi-gear-fill  me-lg-2"></i>
                                     <span class="d-none d-lg-inline">
@@ -271,14 +303,28 @@
                                                 piano blaze
                                             </span>
                                         </div>
-                                        <div class="col">
+                                        <div class="col position-relative">
                                             <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
                                                 3 app
                                             </span>
                                             <i class="fa-solid fa-angles-right"></i>
-                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-lg-none">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-lg-none" data-bs-toggle="collapse" data-bs-target="#ciao" aria-expanded="false" aria-controls="ciao">
                                                 +
                                             </span>
+                                            <div class="collapse position-absolute my_collapse d-lg-none" id="ciao">
+                                                <div class="card card-body">
+                                                    <span class="badge rounded-pill my-bg-badge my-bg-badge-blue mb-3">
+                                                        boolean mobile app
+                                                    </span>
+                                                    <span class="badge rounded-pill my-bg-badge my-bg-badge-blue mb-3">
+                                                        boolean web app
+                                                    </span>
+                                                    <span class="badge rounded-pill my-bg-badge my-bg-badge-blue mb-3">
+                                                        boolean blog app
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            
                                             <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-none d-lg-inline">
                                                 boolean mobile app
                                             </span>
@@ -752,13 +798,13 @@
                                                                             </label>
                                                                            
                                                                             <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                                                            <label class="btn btn-success" for="option1">Done</label>
+                                                                            <label class="btn btn-outline-success" for="option1">Done</label>
 
                                                                             <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                                                            <label class="btn btn-warning" for="option2">Process</label>
+                                                                            <label class="btn btn-outline-danger" for="option2">Process</label>
 
                                                                             <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                                                                            <label class="btn btn-danger" for="option3">Falled</label>
+                                                                            <label class="btn btn-outline-warning " for="option3">Falled</label>
                                                                         </div>
                                                                         
                                                                         <div class="col-12">

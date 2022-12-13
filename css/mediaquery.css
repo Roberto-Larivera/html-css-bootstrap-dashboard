@@ -16,7 +16,7 @@
         width: calc(100% - 110px);
         
     }
-    .my_w-offcanvas{
+    .my_w-offcanvas{  /*    Offcanvans     */
         width: 50% !important;
     }
 }

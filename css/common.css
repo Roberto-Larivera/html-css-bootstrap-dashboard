@@ -50,6 +50,17 @@
     width: 40%;
 }
 
-.my_w-offcanvas{
+.my_w-offcanvas{        /*    Offcanvans     */
     width: 100% !important;
+}
+
+.my_hover-link:hover{
+    text-decoration: underline;
+}
+.my_hover-link-ul:hover{
+    background-color: white;
+    border-radius: 15px;
+}
+.my_hover-link-ul:hover a{
+    color: #1B72E7 !important; 
 }
