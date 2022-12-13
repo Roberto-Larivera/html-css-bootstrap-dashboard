@@ -16,16 +16,12 @@ main{
 #main-aside{
     display: inline-block;
     background-color: #051E34;
-    /* background-color: gray; */
     height: 100%;
-    width: 150px;
-}
-#main-aside > div{
-    height: 100%;
+    width: 50px;
 }
 #main-principal{
     display: inline-block;
-    width: calc(100% - 150px);
+    width: calc(100% - 50px);
     height: 100%;
     
 }
