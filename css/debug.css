@@ -2,10 +2,7 @@
 
 /* .debug */
 
-.debug header{
-    
-    background-color: lightgray;
-}
+
 .debug #principal-main .col-8{
     background-color: lightcoral;
     min-height: 50px;

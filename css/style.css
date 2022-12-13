@@ -11,8 +11,8 @@ main .contenitore_principale{
 }
 #main-aside{
     display: inline-block;
-    /* background-color: #051E34; */
-    background-color: gray;
+    background-color: #051E34;
+    /* background-color: gray; */
     height: 100%;
     width: 150px;
 }

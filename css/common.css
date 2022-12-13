@@ -19,6 +19,7 @@
 .my-bg-badge{
     background-color: var(--my-bg-badge);
     color: white;
+    text-transform: capitalize;
 }
 .my-bg-badge-green{
     background-color: green;
