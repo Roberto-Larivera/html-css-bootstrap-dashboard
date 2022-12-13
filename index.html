@@ -237,10 +237,10 @@
                         <div class="container-fluid">
 
 
-                            <div class="row">   <!--DIVISIONE PRINCIPALE DEL MAIN IN DUE COLONNE IN DESKTOP-->
+                            <div class="row row-cols-1 row-cols-lg-2">   <!--DIVISIONE PRINCIPALE DEL MAIN IN DUE COLONNE IN DESKTOP-->
                                 
                                 <!--1 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
-                                <div class="col-8">
+                                <div class="col col-lg-8">
 
 
                                     <div class="row row-cols-1 ">
@@ -254,299 +254,316 @@
                                                     </h5>
                                                 </div>
                                                 <div class="p-3">
-                                                    <table class="table">
+                                                    
+                                                    <table id="main-table" class="table table-hover">
                                                         <thead>
                                                           <tr>
-                                                            <th scope="col">Nome</th>
-                                                            <th scope="col-auto">Data inizio</th>
-                                                            <th scope="col">ROI</th>
+                                                            <th class="my_w-40" scope="col">Nome</th>
+                                                            <th class="d-none d-md-table-cell px-3" scope="col">Data inizio</th>
+                                                            <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                                             <th scope="col">Stato</th>
                                                             <th scope="col">Azioni</th>
                                                           </tr>
                                                         </thead>
                                                         
                                                         <tbody>
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-success">
+                                                                        done
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-success">
-                                                                    done
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-success">
+                                                                        done
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-success">
-                                                                    done
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-warning">
+                                                                        process
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-warning">
-                                                                    process
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-success">
+                                                                        done
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-success">
-                                                                    done
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-danger">
+                                                                        failed
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-danger">
-                                                                    failed
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-success">
+                                                                        done
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-success">
-                                                                    done
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-danger">
+                                                                        failed
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-success">
-                                                                    done
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
-                                                                
-
-
-
-                                                            </td>
-                                                          </tr>
-
-                                                          <tr>
-                                                            <td>
-                                                               <div class="d-flex align-items-center">
-                                                                    <div class="me-2 circle-code text-white">
-                                                                        <i class="fa-solid fa-code"></i>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center flex-wrap">
+                                                                        <div class="me-2 circle-code text-white">
+                                                                            <i class="fa-solid fa-code"></i>
+                                                                        </div>
+                                                                        Classe 75
                                                                     </div>
-                                                                    Classe 75
-                                                               </div>
-                                                                
+
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    15 Feb 2021
+                                                                </td>
+
+                                                                <td class="d-none d-md-table-cell" >
+                                                                    20%
+                                                                </td>
+
+                                                                <td>
+                                                                    <span class="badge rounded-pill my-bg-badge bg-success">
+                                                                        done
+                                                                    </span>
+                                                                </td>
+
+                                                                <td>
+                                                                    <!-- BUTTON Offcanvans -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                        <i class="bi bi-pencil-fill"></i>
+                                                                    </button>
                                                                     
-                                                                
-                                                            </td>
-                                                            <td>15 Feb 2021</td>
-                                                            <td>20%</td>
-                                                            <td>
-                                                                <span class="badge rounded-pill my-bg-badge bg-danger">
-                                                                    failed
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <!-- BUTTON Offcanvans -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
-                                                                    <i class="bi bi-pencil-fill"></i>
-                                                                </button>
-                                                                
-                                                                <!-- BUTTON Modal -->
-                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    <i class="bi bi-trash-fill"></i>
-                                                                </button>
+                                                                    <!-- BUTTON Modal -->
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                        <i class="bi bi-trash-fill"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+
                                                                 
 
 
@@ -670,7 +687,7 @@
 
 
                                 <!--2 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
-                                <div class="col-4">
+                                <div class="col col-lg-4">
                                   
                                     <div class="row row-cols-1">
                                         <div class="col my-3">
@@ -752,6 +769,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <!--FINE 2 DI 2 COLONNA DIVISIONE PRINIPALE MAIN-->
 
