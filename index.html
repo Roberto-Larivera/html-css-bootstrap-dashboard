@@ -129,8 +129,9 @@
                         <div class="container-fluid">
                             
                             
-                            <div class="row p-3 text-white">    <!--PRIMA DIVISIONE IN ROW-->
-                                <div class="col-6"> <!--PRIMA COLONNA A-->
+                            <div class="row row-cols-1 row-cols-md-3 p-3 text-white">    <!--PRIMA DIVISIONE IN ROW-->
+
+                                <div class="col-6 mb-4 order-2 order-md-1"> <!--PRIMA COLONNA A-->
                                     
                                     <div class="row row-cols-1"> <!--SECONDA DIVISIONE IN ROW-->
                                         <div class="col d-flex align-items-center"> 
@@ -146,13 +147,16 @@
                                                 3 app
                                             </span>
                                             <i class="fa-solid fa-angles-right"></i>
-                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-lg-none">
+                                                +
+                                            </span>
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-none d-lg-inline">
                                                 boolean mobile app
                                             </span>
-                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-none d-lg-inline">
                                                 boolean web app
                                             </span>
-                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue d-none d-lg-inline">
                                                 boolean blog app
                                             </span>
                                         </div>
@@ -166,7 +170,7 @@
                                 
 
                                 
-                                <div class="col lh-1"> <!--INIZIO PRIMA COLONNA B-->
+                                <div class="col lh-1 mb-4 order-3 order-md-2"> <!--INIZIO PRIMA COLONNA B-->
                                     <p>
                                         Studenti online negli ultimi 30 minuti
                                     </p>
@@ -181,13 +185,13 @@
                                 
                                 
                                 
-                                <div class="col d-flex justify-content-end align-items-center">  <!--INIZIO PRIMA COLONNA C-->            <!--******** DA COMPLETARE COME BONUS *********-->
+                                <div class="col d-flex justify-content-md-end align-items-center mb-4 order-1 order-md-3">  <!--INIZIO PRIMA COLONNA C-->            <!--******** DA COMPLETARE COME BONUS *********-->
                                     
                                     <span class="text-capitalize">
                                         nuovo studente
                                     </span>
                                     <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                        <i class="bi bi-plus-square ms-2 fs-2 text-white"></i>
+                                        <i class="bi bi-plus-square ms-2 fs-1 text-white"></i>
                                     </button>
                                       
                                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
