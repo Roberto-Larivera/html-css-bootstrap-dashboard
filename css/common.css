@@ -49,3 +49,7 @@
 .my_w-40{
     width: 40%;
 }
+
+.my_w-offcanvas{
+    width: 100% !important;
+}

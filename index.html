@@ -141,7 +141,8 @@
                                             <i class="bi bi-plus-square ms-2 fs-1 text-white"></i>
                                         </button>
                                           
-                                        <div class="offcanvas offcanvas-end text-dark text-start w-50 show" tabindex="-1" id="offcanvas-add-student" aria-labelledby="offcanvasExampleLabel">               <!-- rimuovere "show" per non far aprire al caricamento-->
+                                        <!-- Offcanvans Studente-->
+                                        <div class="offcanvas offcanvas-end text-dark text-start my_w-offcanvas" tabindex="-1" id="offcanvas-add-student" aria-labelledby="offcanvasExampleLabel">               <!-- rimuovere "show" per non far aprire al caricamento-->
                                             <div class="offcanvas-header">
                                                 
                                                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">
@@ -384,7 +385,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -421,7 +422,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -458,7 +459,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -495,7 +496,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -532,7 +533,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -569,7 +570,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -606,7 +607,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -643,7 +644,7 @@
 
                                                                 <td>
                                                                     <!-- BUTTON Offcanvans -->
-                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#editclasse" aria-controls="offcanvasExample">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-edit-class" aria-controls="offcanvas-edit-class">
                                                                         <i class="bi bi-pencil-fill"></i>
                                                                     </button>
                                                                     
@@ -664,28 +665,121 @@
                                                         </tbody>
                                                     </table>
 
-                                                    <!-- Offcanvans -->     
-                                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="editclasse" aria-labelledby="offcanvasExampleLabel">
+                                                    <!-- Offcanvans Classe-->
+                                                      
+                                                    <div class="offcanvas offcanvas-end text-dark text-start my_w-offcanvas" tabindex="-1" id="offcanvas-edit-class" aria-labelledby="title-offcanvas-edit-class">               <!-- rimuovere "show" per non far aprire al caricamento-->
                                                         <div class="offcanvas-header">
-                                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                            
+                                                            <h5 class="offcanvas-title" id="title-offcanvas-edit-class">
+                                                                Modifica dati classe
+                                                            </h5>
+                                                            
+                                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            
                                                         </div>
                                                         <div class="offcanvas-body">
-                                                          <div>
-                                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                                          </div>
-                                                          <div class="dropdown mt-3">
-                                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                                              Dropdown button
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
+                                                            
+                                                            <form method="GET">
+                                                                <div class="container-fluid">
+            
+                                                                    <div class="row g-3">
+                                                                        <div class="col-6">
+                                                                            <label class="d-block form-label" for="nome-classe">
+                                                                                Nome classe
+                                                                            </label>
+                                                                            <input class="form-control" type="text" id="nome-classe" name="nome_classe" placeholder="" required>
+                                                                        </div>
+            
+                                                                        <div class="col-6">
+                                                                            <label class="d-block form-label" for="codice">
+                                                                                Codice classe
+                                                                            </label>
+                                                                            <div class="input-group">
+                                                                                <input class="form-control" type="text" id="codice" name="codice" placeholder="" required>
 
+                                                                            </div>
+                                                                        </div>
+            
+                                                                        <div class="col-6">
+                                                                            <label class="d-block form-label" for="inizio-data">
+                                                                                Data inizio corso
+                                                                            </label>
+                                                                            <input class="form-control" type="date"  id="inizio-data" name="inizio_data" placeholder="" required>
+                                                                        </div>
+
+                                                                        <div class="col-6">
+                                                                            <label class="d-block form-label" for="fine-data">
+                                                                                Data fine corso
+                                                                            </label>
+                                                                            <input class="form-control" type="date"  id="fine-data" name="fine_data" placeholder="" required>
+                                                                        </div>
+            
+                                                                        <div class="col-6">
+                                                                            <label class="d-block form-label" for="studente">
+                                                                                Studente - Ricerca per nome
+                                                                            </label>
+                                                                            <select class="form-select" name="studente" id="studente"required>
+                                                                                <option disabled selected>Seleziona studente</option>
+                                                                                <option value="#00001">
+                                                                                    Roberto
+                                                                                </option>
+                                                                                <option value="#00002">
+                                                                                    Giorgio
+                                                                                </option>
+                                                                                <option value="#00003">
+                                                                                    Luca
+                                                                                </option>
+                                                                            </select>
+            
+                                                                        </div>
+            
+                                                                        <div class="col-6">
+                                                                            <label class="d-block form-label" for="codice-studente">
+                                                                                Studente - Ricerca Per Codice
+                                                                            </label>
+                                                                            <input class="form-control" type="number" minlength="5" maxlength="5" id="codice-studente" name="codice_studente" placeholder="" required>
+                                                                        </div>
+            
+                                                                        <div class="col-2">
+                                                                            <label class="d-block form-label" for="roi">
+                                                                                ROI
+                                                                            </label>
+                                                                            <input class="form-control" type="number" minlength="5" maxlength="5" id="roi" name="roi" placeholder="" required>
+                                                                        </div>
+                                                                        <div class="col-8">
+                                                                            <label class="d-block form-label" for="roi">
+                                                                                Stato
+                                                                            </label>
+                                                                           
+                                                                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                                                            <label class="btn btn-success" for="option1">Done</label>
+
+                                                                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                                                            <label class="btn btn-warning" for="option2">Process</label>
+
+                                                                            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                                                            <label class="btn btn-danger" for="option3">Falled</label>
+                                                                        </div>
+                                                                        
+                                                                        <div class="col-12">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="verifica" name="verifica" required>
+                                                                            <label class="form-check-label" for="verifica">
+                                                                                Seleziona per proseguire
+                                                                            </label>
+                                                                        </div>
+            
+                                                                        <div class="col">
+                                                                            <input type="submite" class="btn btn-primary" value="Salva">
+                                                                            <input type="submite" class="btn btn-warning" value="Cancella" disabled>
+            
+                                                                        </div>
+            
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                             </form>
+            
+                                                        </div>
                                                     </div>
 
                                                     <!-- Modal -->
