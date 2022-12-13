@@ -133,22 +133,22 @@
                                             <h1 class="d-inline-block text-capitalize me-2">
                                                 boolean
                                             </h1>
-                                            <span class="badge rounded-pill my-bg-badge">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
                                                 piano blaze
                                             </span>
                                         </div>
                                         <div class="col">
-                                            <span class="badge rounded-pill my-bg-badge">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
                                                 3 app
                                             </span>
                                             <i class="fa-solid fa-angles-right"></i>
-                                            <span class="badge rounded-pill my-bg-badge">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
                                                 boolean mobile app
                                             </span>
-                                            <span class="badge rounded-pill my-bg-badge">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
                                                 boolean web app
                                             </span>
-                                            <span class="badge rounded-pill my-bg-badge">
+                                            <span class="badge rounded-pill my-bg-badge my-bg-badge-blue">
                                                 boolean blog app
                                             </span>
                                         </div>
@@ -241,7 +241,9 @@
 
                                             <div class="card">
                                                 <div class="card-header">
-                                                 Prossime classi
+                                                    <h5>
+                                                        Prossime classi
+                                                    </h5>
                                                 </div>
                                                 <div class="p-3">
                                                     <table class="table">
@@ -254,20 +256,24 @@
                                                             <th scope="col">Azioni</th>
                                                           </tr>
                                                         </thead>
+                                                        
                                                         <tbody>
                                                           <tr>
                                                             <td>
-                                                                <div class="circle-code text-white">
-                                                                    <i class="bi bi-code-slash"></i>
-                                                                </div>
-                                                                <span>
-                                                                    classe 75
-                                                                </span>
+                                                               <div class="d-flex align-items-center">
+                                                                    <div class="me-2 circle-code text-white">
+                                                                        <i class="fa-solid fa-code"></i>
+                                                                    </div>
+                                                                    Classe 75
+                                                               </div>
+                                                                
+                                                                    
+                                                                
                                                             </td>
                                                             <td>15 Feb 2021</td>
                                                             <td>20%</td>
                                                             <td>
-                                                                <span class="badge rounded-pill my-bg-badge-green">
+                                                                <span class="badge rounded-pill my-bg-badge bg-danger">
                                                                     done
                                                                 </span>
                                                             </td>
@@ -275,9 +281,35 @@
                                                                 <button type="button" class="btn btn-outline-secondary">
                                                                     <i class="bi bi-pencil-fill"></i>
                                                                 </button>
-                                                                <button type="button" class="btn btn-outline-secondary">
-                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                    <i class="bi bi-trash-fill"></i>
                                                                 </button>
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                                            Eliminazione Classe
+                                                                        </h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                        Sei sicuro di voler eliminare? <br>
+                                                                        *Dopo aver eliminato una classe non puoi tornare indietro
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-danger">
+                                                                            Elimina
+                                                                        </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+
+
+
                                                             </td>
                                                           </tr>
                                                           

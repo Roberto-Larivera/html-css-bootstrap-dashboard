@@ -17,22 +17,13 @@
 }
 
 .my-bg-badge{
-    background-color: var(--my-bg-badge);
     color: white;
     text-transform: capitalize;
 }
-.my-bg-badge-green{
-    background-color: green;
-    color: white;
+.my-bg-badge-blue{
+    background-color: var(--my-bg-badge);
 }
-.my-bg-badge-yellow{
-    background-color: yellow;
-    color: white;
-}
-.my-bg-badge-red{
-    background-color: red;
-    color: white;
-}
+
 .circle-code{
     display: flex;
     justify-content: center;
