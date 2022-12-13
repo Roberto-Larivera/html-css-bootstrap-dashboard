@@ -24,7 +24,10 @@
             <div class="container-fluid">
                 <div class="row align-items-center align-content-center">
                     <div class="col-auto">
-                        <img src="img/logo.svg" alt="logo-desktop">
+                        <div id="logo">
+                            <img src="img/logo.svg" alt="logo-desktop" class="d-none d-lg-inline-block">
+                            <img src="img/mobile-logo.png" alt="logo-mobile" class="d-lg-none">
+                        </div>
                     </div>
                     <div class="col">
                         <form action="#">
@@ -41,20 +44,20 @@
                         <ul class="my-link-format d-flex justify-content-between  p-0 m-0">
                             <li>
                                 
-                                <button type="button" class="btn text-secondary fs-5 ">
+                                <button type="button" class="btn text-secondary fs-5 d-none d-lg-inline">
                                     <i class="bi bi-list-ul"></i>
                                 </button>
                                 
                             </li>
                             <li>
-                                <button type="button" class="btn text-secondary fs-5 ">
+                                <button type="button" class="btn text-secondary fs-5 d-none d-lg-inline">
                                     <i class="bi bi-question-circle-fill"></i>
                                 </button>
                                 
 
                             </li>
                             <li>
-                                <button type="button" class="btn text-secondary fs-5 ">
+                                <button type="button" class="btn text-secondary fs-5 d-none d-lg-inline">
                                     <i class="bi bi-three-dots-vertical"></i>
                                 </button>
                                 
@@ -108,7 +111,9 @@
                             <li>
                                 <a href="#" class="text-white">
                                     <i class="bi bi-gear-fill  me-2"></i>
-                                    Admin
+                                    <span>
+                                        Admin
+                                    </span>
                                 </a>
                             </li>
                         </ul>
