@@ -30,26 +30,51 @@
                         <form action="#">
                             <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
                             <div class="input-group">
-                                <div class="input-group-text">
+                                <div class="input-group-text bg_mysearch">
                                     <i class="bi bi-search"></i>
                                 </div>
-                                <input type="search" class="form-control" id="autoSizingInputGroup" placeholder="Prova a cercare: Lezione di Laravel">
+                                <input type="search" class="form-control bg_mysearch" id="autoSizingInputGroup" placeholder="Prova a cercare: Lezione di Laravel">
                             </div>
                         </form>
                     </div>
                     <div class="col-auto">
-                        <i class="bi bi-list-ul"></i>
-                        <i class="bi bi-question-circle-fill"></i>
-                        <i class="bi bi-three-dots-vertical"></i>
-                        <i class="bi bi-bell-fill"></i>
+                        <ul class="my-link-format d-flex justify-content-between  p-0 m-0">
+                            <li>
+                                
+                                <button type="button" class="btn text-secondary fs-5 ">
+                                    <i class="bi bi-list-ul"></i>
+                                </button>
+                                
+                            </li>
+                            <li>
+                                <button type="button" class="btn text-secondary fs-5 ">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </button>
+                                
+
+                            </li>
+                            <li>
+                                <button type="button" class="btn text-secondary fs-5 ">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                                
+
+                            </li>
+                            <li>
+                                <button type="button" class="btn text-warning fs-5 ">
+                                    <i class="bi bi-bell-fill"></i>
+                                </button>
+                                
+
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <!--FINE NAV BAR-->   
         </header>
 
-        <main>
-            <div class="contenitore_principale overflow-hidden">
+        <main class="overflow-hidden d-flex">
                 <!--INIZIO ASIDE-->
                 <aside id="main-aside" class="py-4"> 
                     <div class="d-flex flex-column align-items-center justify-content-between">
@@ -57,19 +82,25 @@
                             <li>
                                 <a href="#" class="text-white">
                                     <i class="bi bi-house-door-fill me-2"></i>
-                                    Home
+                                    <span>
+                                        Home
+                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="text-white">
                                     <i class="bi bi-graph-up  me-2"></i>
-                                    Stats
+                                    <span>
+                                        Stats
+                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="text-white">
                                     <i class="bi bi-bar-chart-fill  me-2"></i>
-                                    Signals
+                                    <span>
+                                        Signals
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -406,7 +437,6 @@
 
 
                 </section>
-            </div>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>

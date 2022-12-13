@@ -1,14 +1,15 @@
 header .row{
     height: 70px;
 }
+header .bg_mysearch{
+    background-color: #E5E5E5;
+    border-color: #E5E5E5;
+}
 main{
     height: calc(100vh - 70px);
-}
-main .contenitore_principale{
-    display: flex;
-    height: 100%;
     width: 100%;
 }
+
 #main-aside{
     display: inline-block;
     background-color: #051E34;
