@@ -16,6 +16,7 @@ main{
 #main-aside{
     display: inline-block;
     background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
     height: 100%;
     width: 50px;
 }
